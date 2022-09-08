@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3283E00A28C9A9AD00A0306A /* Learning_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283E00928C9A9AD00A0306A /* Learning_AppApp.swift */; };
-		3283E00C28C9A9AD00A0306A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283E00B28C9A9AD00A0306A /* ContentView.swift */; };
+		3283E00A28C9A9AD00A0306A /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283E00928C9A9AD00A0306A /* LearningApp.swift */; };
+		3283E00C28C9A9AD00A0306A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283E00B28C9A9AD00A0306A /* HomeView.swift */; };
 		3283E00E28C9A9AE00A0306A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3283E00D28C9A9AE00A0306A /* Assets.xcassets */; };
 		3283E01128C9A9AE00A0306A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3283E01028C9A9AE00A0306A /* Preview Assets.xcassets */; };
 		3283E01B28C9A9AF00A0306A /* Learning_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283E01A28C9A9AF00A0306A /* Learning_AppTests.swift */; };
 		3283E02528C9A9AF00A0306A /* Learning_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283E02428C9A9AF00A0306A /* Learning_AppUITests.swift */; };
 		3283E02728C9A9AF00A0306A /* Learning_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283E02628C9A9AF00A0306A /* Learning_AppUITestsLaunchTests.swift */; };
+		3283E03928C9AAC800A0306A /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283E03828C9AAC800A0306A /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,8 @@
 
 /* Begin PBXFileReference section */
 		3283E00628C9A9AD00A0306A /* Learning App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3283E00928C9A9AD00A0306A /* Learning_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_AppApp.swift; sourceTree = "<group>"; };
-		3283E00B28C9A9AD00A0306A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3283E00928C9A9AD00A0306A /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
+		3283E00B28C9A9AD00A0306A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3283E00D28C9A9AE00A0306A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3283E01028C9A9AE00A0306A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3283E01628C9A9AF00A0306A /* Learning AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Learning AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		3283E02028C9A9AF00A0306A /* Learning AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Learning AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3283E02428C9A9AF00A0306A /* Learning_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_AppUITests.swift; sourceTree = "<group>"; };
 		3283E02628C9A9AF00A0306A /* Learning_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3283E03828C9AAC800A0306A /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,12 @@
 		3283E00828C9A9AD00A0306A /* Learning App */ = {
 			isa = PBXGroup;
 			children = (
-				3283E00928C9A9AD00A0306A /* Learning_AppApp.swift */,
-				3283E00B28C9A9AD00A0306A /* ContentView.swift */,
+				3283E00928C9A9AD00A0306A /* LearningApp.swift */,
+				3283E03328C9AA1500A0306A /* View */,
+				3283E03428C9AA6500A0306A /* ViewModel */,
+				3283E03528C9AA7100A0306A /* Model */,
+				3283E03628C9AA7900A0306A /* Resources */,
+				3283E03728C9AA8200A0306A /* Helpers */,
 				3283E00D28C9A9AE00A0306A /* Assets.xcassets */,
 				3283E00F28C9A9AE00A0306A /* Preview Content */,
 			);
@@ -125,6 +131,43 @@
 				3283E02628C9A9AF00A0306A /* Learning_AppUITestsLaunchTests.swift */,
 			);
 			path = "Learning AppUITests";
+			sourceTree = "<group>";
+		};
+		3283E03328C9AA1500A0306A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3283E00B28C9A9AD00A0306A /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3283E03428C9AA6500A0306A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3283E03828C9AAC800A0306A /* ContentModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3283E03528C9AA7100A0306A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3283E03628C9AA7900A0306A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3283E03728C9AA8200A0306A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3283E00C28C9A9AD00A0306A /* ContentView.swift in Sources */,
-				3283E00A28C9A9AD00A0306A /* Learning_AppApp.swift in Sources */,
+				3283E00C28C9A9AD00A0306A /* HomeView.swift in Sources */,
+				3283E00A28C9A9AD00A0306A /* LearningApp.swift in Sources */,
+				3283E03928C9AAC800A0306A /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
