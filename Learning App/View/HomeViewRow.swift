@@ -46,6 +46,7 @@ struct HomeViewRow: View {
                     Text(description)
                         .font(.caption )
                         .padding(.bottom, 20)
+                        
                     
                     // MARK: Icons
                     HStack{
